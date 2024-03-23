@@ -1,6 +1,6 @@
 {
   "name": "Running Coach AI",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "a running coach that will motivate you and check your vitals every 3min making sure you stick to your goal. Uses the TerraAPI that connects with other wearables.",
   "engines": {
     "node": "18.17.1"
