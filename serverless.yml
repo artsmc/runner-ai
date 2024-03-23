@@ -1,0 +1,20 @@
+service: gpt4-private-api
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: dev
+  region: us-east-2
+  memorySize: 1024
+functions:
+  app:
+    handler: index.handler
+    timeout: 900
+    events:
+      - http:
+          path: /
+          method: ANY
+          cors: true
+      - http:
+          path: /{proxy+}
+          method: ANY
+          cors: true

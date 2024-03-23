@@ -1,0 +1,24 @@
+.naked{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.is-hidden{
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.control{
+  transition: all 0.2s ease;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50px;
+  margin:20px;
+  min-width: 50px;
+}
+.control *{transition: all 0.2s ease;}
+.control:hover, .control:active{
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 200%;
+}
